@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharma Digital | Creative Agency</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b0f19;
+    color:white;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#11182a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* LOGO */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:bold;
+    color:#4f7cff;
+    text-decoration:none;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+    border-radius:8px;
+    object-fit:cover;
+}
+
+/* NAV */
+nav a{
+    color:#aaa;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:130px 20px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#aaa;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#4f7cff;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+    color:#4f7cff;
+}
+
+/* SERVICES GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#121a2a;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #1f2a44;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(79,124,255,0.2);
+}
+
+.card h3{
+    color:#4f7cff;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:#aaa;
+    line-height:1.7;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    background:#121a2a;
+    padding:40px;
+    border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#777;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.jpeg" alt="Logo">
+        Sharma Digital
+    </a>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Creative Digital Agency</h1>
+    <p>Graphic Design • Digital Marketing • Music Distribution • Video Editing</p>
+    <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="title">About Sharma Digital</h2>
+
+    <div class="about">
+        We are a professional digital agency helping businesses grow online through
+        creative design, marketing, branding, and video production services.
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2 class="title">Our Services</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Graphic Designer</h3>
+            <p>Logo, posters, banners and branding design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>Facebook, Instagram & Google ads for business growth.</p>
+        </div>
+
+        <div class="card">
+            <h3>Music Distribution</h3>
+            <p>Release your music on Spotify, YouTube & Apple Music.</p>
+        </div>
+
+        <div class="card">
+            <h3>Video Editor</h3>
+            <p>Professional video editing for reels, ads and YouTube.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact">
+        📞 9807538022 <br><br>
+        📧 sharmadigitalnp@gmail.com <br><br>
+        📍 Tilottama-14, Jeetpur, Nepal <br><br>
+
+        <a class="btn" href="tel:+9779807538022">Call Now</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Sharma Digital. All Rights Reserved.
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/9779807538022">
+WhatsApp
+</a>
+
+</body>
+</html>
